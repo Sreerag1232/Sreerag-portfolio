@@ -1,0 +1,20 @@
+{
+  "name": "sreerag-vfx-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Sreerag Rajeevan - Senior Matchmove & Rotoanim Artist and AI Filmmaker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node scripts/build.js",
+    "preview": "node -e \"process.env.SERVE_DIR='dist'; require('./server.js');\""
+  },
+  "keywords": [
+    "portfolio",
+    "vfx",
+    "matchmove",
+    "rotoanim",
+    "ai-filmmaker"
+  ],
+  "author": "Sreerag Rajeevan",
+  "license": "ISC"
+}

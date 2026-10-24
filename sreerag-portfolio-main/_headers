@@ -1,0 +1,19 @@
+# Cloudflare Pages response headers. Copied into dist/ by scripts/build.js.
+# Hero frames carry ?v=N in their URL (FRAME_VERSION in script.js), so they can be
+# cached for a year; changing the images means bumping that number.
+/tempp/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/public/assets/*
+  Cache-Control: public, max-age=2592000
+
+/showreel/*
+  Cache-Control: public, max-age=2592000
+
+# Code and page stay revalidated so edits go live right away
+/
+  Cache-Control: no-cache
+/*.js
+  Cache-Control: no-cache
+/*.css
+  Cache-Control: no-cache

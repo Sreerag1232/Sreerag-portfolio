@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment and sensitive files
+.env
+.env.*
+*.local
+
+# Dev and deployment scripts
+deploy.ps1
+
+# Build output
+dist/
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+*.log
+.gemini/
+.agents/
+
+# Exclude unused raw videos exceeding GitHub's 100 MB limit
+public/assets/videos/video_*.mp4
+public/assets/videos/ai-video-*.mp4
+public/assets/videos/VID_*.mp4
+
+# Exclude heavy source PNG frames (the site uses the compressed WebP frames)
+tempp/*.png
+
